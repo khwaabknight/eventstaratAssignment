@@ -26,16 +26,16 @@ const orbitingIcons2: OrbitingIcon[] = [
 const IntegrationOrbit = () => {
     return (
         <div className="relative w-full min-h-[600px] bg-gradient-to-br from-[#1b004c] to-[#2b0d7d] rounded-3xl flex items-center justify-center overflow-hidden px-4">
-            <div className="absolute w-[500px] h-[500px] border border-purple-600/20 rounded-full" />
+            <div className="absolute w-[500px] h-[500px] border border-purple-600/20 rounded-full hidden md:block" />
             <div className="absolute w-[350px] h-[350px] border border-purple-600/20 rounded-full" />
             <div className="absolute w-[200px] h-[200px] border border-purple-600/20 rounded-full" />
 
             <OrbitingIcons
-                sizeClassNames="w-[500px] h-[500px]"
+                sizeClassNames="w-[350px] h-[350px] lg:w-[500px] lg:h-[500px]"
                 orbitingIcons={orbitingIcons1}
             >
                 <OrbitingIcons
-                    sizeClassNames="w-[350px] h-[350px]"
+                    sizeClassNames="w-[200px] h-[200px] lg:w-[350px] lg:h-[350px]"
                     orbitingIcons={orbitingIcons2}
                     reverse
                 >
