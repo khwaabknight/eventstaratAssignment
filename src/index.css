@@ -11,7 +11,8 @@
 @theme {
   --font-ruberoid: 'Ruberoid', sans-serif;
   --font-montserrat: 'Montserrat', sans-serif;
-  --color-primary: #420886;                              
+  --color-primary: #420886;
+  --color-secondary: #100249;                            
 }
 
 body {
