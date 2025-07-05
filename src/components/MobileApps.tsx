@@ -1,4 +1,3 @@
-import React from 'react';
 import ControlSection from './common/ControlSection';
 import mobileAppsImg from '../assets/images/MobileApps.png';
 

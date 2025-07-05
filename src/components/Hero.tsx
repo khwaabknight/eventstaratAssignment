@@ -1,4 +1,4 @@
-import heroBg from '../assets/images/HeroBg.png';
+// import heroBg from '../assets/images/HeroBg.png';
 import heroImg from '../assets/images/HeroImg.png';
 import Button from './common/Button';
 

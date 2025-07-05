@@ -2,20 +2,17 @@ import swiftImg from '../assets/images/swiftreg.png';
 import mailImg from '../assets/images/eventmail.png';
 import roverImg from '../assets/images/eventrover.png';
 import FeaturePlugNPlayCard from './common/FeaturePlugNPlayCard';
+import RowHeadingAndDescription from './common/RowHeadingAndDescription';
 
 const PlugAndPlay = () => {
     return (
         <section className="flex flex-col lg:items-start lg:justify-between w-10/12 mx-auto gap-6 font-ruberoid mb-20">
-            <div className="w-full space-y-4 flex justify-between">
-                <h2 className="text-5xl font-semibold text-primary">
-                    Plug And Play
-                </h2>
-                <p className="text-black text-base max-w-lg p-1">
-                    Test tools are modular by design — meaning you can deploy
-                    what you need, when you need it. Each module works great on
-                    its own and even better together.
-                </p>
-            </div>
+            <RowHeadingAndDescription
+                heading="Plug And Play"
+                description="Test tools are modular by design — meaning you can deploy what
+                you need, when you need it. Each module works great on its own
+                and even better together."
+            />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:w-full">
                 <FeaturePlugNPlayCard
                     image={swiftImg}

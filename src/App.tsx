@@ -12,7 +12,7 @@ import PreFooter from "./components/PreFooter";
 // src/App.tsx
 function App() {
     return (
-        <main className="min-h-screen bg-white text-gray-900">
+        <main className="min-h-screen bg-white text-black">
 			<Hero/>
 			<CTA/>
 			<PreEvent/>
