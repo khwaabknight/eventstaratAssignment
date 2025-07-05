@@ -4,7 +4,7 @@ import whatsapp from '../assets/icons/WhatsApp.png';
 import razorpay from '../assets/icons/Razorpay.png';
 import adsense from '../assets/icons/adsense.png';
 
-import salesforce from '../assets/icons/salesforce.png';
+import salesforce from '../assets/icons/Salesforce.png';
 import zoho from '../assets/icons/Zoho.png';
 import zapier from '../assets/icons/zapier.png';
 
