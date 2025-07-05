@@ -1,4 +1,16 @@
-function Button({ variant = 'primary', text = 'Book A Demo', className = '' }) {
+import type React from 'react';
+
+type ButtonProps = {
+    variant?: 'primary' | 'gradient';
+    text?: React.ReactNode;
+    className?: string;
+};
+
+function Button({
+    variant = 'primary',
+    text = 'Book A Demo',
+    className = '',
+}: ButtonProps) {
     if (variant === 'gradient') {
         return (
             <button
@@ -18,7 +30,9 @@ function Button({ variant = 'primary', text = 'Book A Demo', className = '' }) {
         );
     }
     return (
-        <button className={`inline-block bg-primary text-white px-6 py-4 rounded-full text-sm font-medium hover:bg-primary/90 transition ${className}`}>
+        <button
+            className={`inline-block bg-primary text-white px-6 py-4 rounded-full text-sm font-medium hover:bg-primary/90 transition ${className}`}
+        >
             {text}
         </button>
     );
