@@ -12,7 +12,7 @@ const EventSection = () => {
         { image: imgPost, title: 'Post-Event' },
     ];
     return (
-        <section className="w-11/12 mx-auto px-4 lg:p-10 mt-10 flex flex-col lg:flex-row gap-5 items-center justify-start font-ruberoid lg:h-[600px]">
+        <section className="w-10/12 mx-auto px-4 lg:p-10 mt-10 flex flex-col lg:flex-row gap-5 items-center justify-start font-ruberoid lg:h-[600px]">
             {/* Main Image */}
             <div className="h-full">
                 <img
