@@ -37,8 +37,8 @@ function Footer() {
                 className=" relative px-6 py-10 lg:py-16 bg-no-repeat bg-cover bg-center rounded-t-3xl"
                 style={{ backgroundImage: `url(${footerBg})` }}
             >
-                <div className="w-10/12 mx-auto flex flex-col lg:justify-between gap-10">
-                    <div className="w-full flex justify-between items-center">
+                <div className="w-full lg:w-10/12 mx-auto flex flex-col lg:justify-between gap-10">
+                    <div className="w-full flex flex-col lg:flex-row justify-between items-start">
                         <div>
                             <h3 className="text-2xl font-semibold">
                                 Join Our Newsletter Today.
@@ -46,19 +46,19 @@ function Footer() {
                             <p className="text-lg text-gray-300 mb-3">
                                 Get Instant Updates
                             </p>
-                            <div className="flex items-center gap-4 mt-4 mb-6">
-                                <div className="flex -space-x-2">
+                            <div className="flex flex-col lg:flex-row lg:items-center gap-4 mt-4 mb-6">
+                                <div className="flex -space-x-3">
                                     <img
                                         src={footerUser3}
-                                        className="w-16 h-16 rounded-full border-4 border-white bg-[#DCCEFC]"
+                                        className="w-12 lg:w-16 h-12 lg:h-16 rounded-full border-4 border-white bg-[#DCCEFC]"
                                     />
                                     <img
                                         src={footerUser2}
-                                        className="w-16 h-16 rounded-full border-4 border-white bg-[#FFE184]"
+                                        className="w-12 lg:w-16 h-12 lg:h-16 rounded-full border-4 border-white bg-[#FFE184]"
                                     />
                                     <img
                                         src={footerUser1}
-                                        className="w-16 h-16 rounded-full border-4 border-white bg-[#08BC8D]"
+                                        className="w-12 lg:w-16 h-12 lg:h-16 rounded-full border-4 border-white bg-[#08BC8D]"
                                     />
                                 </div>
                                 <span className="text-base text-gray-300">
@@ -67,7 +67,7 @@ function Footer() {
                             </div>
                         </div>
 
-                        <div className="flex items-center px-2 py-1 w-full max-w-sm">
+                        <div className="flex flex-col lg:flex-row items-center gap-y-2 lg:px-2 py-1 w-full lg:max-w-sm">
                             <input
                                 type="email"
                                 placeholder="Email Address"
@@ -78,7 +78,7 @@ function Footer() {
                     </div>
 
                     <div className="flex flex-col lg:flex-row gap-10 w-full justify-between text-sm">
-                        <div className="flex flex-col gap-2 w-1/5">
+                        <div className="grid grid-cols-2 lg:grid-cols-1 gap-2 w-full lg:w-1/5 ">
                             <a
                                 href="#"
                                 className="font-semibold text-2xl leading-12"
@@ -117,17 +117,17 @@ function Footer() {
                             </a>
                         </div>
 
-                        <div className="w-4/5">
+                        <div className="w-full lg:w-4/5">
                             <h4 className="font-semibold text-white mb-8">
                                 Solutions:
                             </h4>
-                            <div className="flex justify-between">
+                            <div className="grid grid-cols-2 lg:grid-cols-4 gap-y-5 w-full">
                                 {footerLinkGroups.map((group, index) => (
                                     <div
                                         key={index}
                                         className="flex flex-col gap-2"
                                     >
-                                        <p className="text-white text-lg font-medium leading-8 mb-5">
+                                        <p className="text-white text-lg font-medium leading-8 mb-2 lg:mb-5">
                                             {group.title}
                                         </p>
                                         <ul className="flex flex-col gap-4">
@@ -150,7 +150,7 @@ function Footer() {
                         </div>
                     </div>
                     <div className="flex flex-col lg:flex-row gap-10 w-full">
-                        <div className="grid grid-cols-4 w-5/7 justify-between">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-2 w-full lg:w-5/7 justify-between">
                             <p>
                                 2118 Thornridge Cir.
                                 <br />
@@ -166,22 +166,24 @@ function Footer() {
                             <p>Hello@test.com</p>
                             <p>(201) 555 012</p>
                         </div>
-                        <div className="flex justify-end gap-3 mt-2 w-2/7">
-                            <Button
-                                variant="gradient"
-                                text={<FaInstagram className="w-7 h-7" />}
-                                className="w-16 h-16 !p-1 aspect-square rounded-full"
-                            />
-                            <Button
-                                variant="gradient"
-                                text={<FaYoutube className="w-7 h-7" />}
-                                className="w-16 h-16 !p-1 aspect-square rounded-full"
-                            />
-                            <Button
-                                variant="gradient"
-                                text={<FaGithub className="w-7 h-7" />}
-                                className="w-16 h-16 !p-1 aspect-square rounded-full"
-                            />
+                        <div className="flex lg:justify-end gap-3 mt-2 w-full lg:w-2/7">
+                            <div className="flex gap-3">
+                                <Button
+                                    variant="gradient"
+                                    text={<FaInstagram className="w-7 h-7" />}
+                                    className="w-16 h-16 !p-1 aspect-square rounded-full"
+                                />
+                                <Button
+                                    variant="gradient"
+                                    text={<FaYoutube className="w-7 h-7" />}
+                                    className="w-16 h-16 !p-1 aspect-square rounded-full"
+                                />
+                                <Button
+                                    variant="gradient"
+                                    text={<FaGithub className="w-7 h-7" />}
+                                    className="w-16 h-16 !p-1 aspect-square rounded-full"
+                                />
+                            </div>
                         </div>
                     </div>
                 </div>
