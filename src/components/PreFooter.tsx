@@ -4,7 +4,7 @@ import Button from './common/Button';
 function PreFooter() {
     return (
         <section
-            className="w-10/12 mx-auto rounded-xl p-8 lg:p-16 flex flex-col lg:flex-row justify-between items-start lg:items-center text-white font-ruberoid"
+            className="w-10/12 mx-auto rounded-3xl p-8 lg:p-16 flex flex-col lg:flex-row justify-between items-start lg:items-center text-white font-ruberoid"
             style={{
                 backgroundImage: `url(${bgPattern})`,
                 backgroundSize: 'cover',

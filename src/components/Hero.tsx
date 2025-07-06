@@ -32,7 +32,7 @@ function Hero() {
             /> */}
 
             {/* Foreground Image */}
-            <div className="mt-5 relative w-full min-h-[500px]">
+            <div className="mt-5 relative w-full lg:min-h-[500px]">
                 <img
                     src={heroImg}
                     alt="Main Visual"

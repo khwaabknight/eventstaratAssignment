@@ -12,9 +12,9 @@ const EventSection = () => {
         { image: imgPost, title: 'Post-Event' },
     ];
     return (
-        <section className="w-10/12 mx-auto px-4 lg:p-10 mt-10 flex flex-col lg:flex-row gap-5 items-center justify-start font-ruberoid lg:h-[600px]">
+        <section className="w-full lg:w-10/12 mx-auto px-4 lg:p-10 mt-10 flex flex-col lg:flex-row gap-5 items-center justify-start font-ruberoid lg:h-[600px] mb-20">
             {/* Main Image */}
-            <div className="h-full">
+            <div className="h-full ">
                 <img
                     src={allTabs[displayedTab].image}
                     alt="Main Event"
@@ -76,11 +76,11 @@ const Tab = ({ image, title, index, active = false, onClick }: TabProps) => {
                     active ? 'bg-purple-500 p-2.5' : 'bg-transparent'
                 } `}
             />
-            <div className="w-full flex justify-between mt-3">
-                <span className="text-base font-semibold text-black/40">
+            <div className="w-full flex flex-col lg:flex-row justify-between mt-3">
+                <span className="text-sm lg:text-base font-semibold text-black/40">
                     {index.toString().padStart(2, '0')}
                 </span>
-                <span className="text-lg font-semibold text-black">
+                <span className="text-xs lg:text-lg font-semibold text-black">
                     {title}
                 </span>
             </div>
